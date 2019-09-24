@@ -1,0 +1,112 @@
+body{
+    margin: 0;
+    padding:0;
+    background-color: #222;
+    font-family: 'Montserrat', sans-serif;
+    color: #eee;
+    font-size: 1rem;
+}
+
+#title{
+   text-shadow: 1px 1px black, 2px 2px 1px black, 0px 0px 5px black;
+   margin-right: 5%;
+   margin-bottom: 5%;
+}
+
+.imageLarge{
+    height:100vh;
+    width:99vw;
+    margin:auto;
+    display:flex;
+    /* The following three lines are from: https://www.w3schools.com/cssref/pr_background-image.asp */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+#engineering{
+    font-size: 3rem;
+    justify-content: flex-end;
+    align-items: flex-end;
+    background-image: url("/media/title.jpg");
+}
+
+#imaging{
+    background-image: url("/media/imageManip.jpg");
+    justify-content: center;
+    align-items: center;
+}
+
+#dartBoard{
+    background-image: url("/media/darts.jpg");
+}
+
+#colors{
+    background-image: url("/media/colors.jpg");
+}
+
+#contact{
+    background-image: url("/media/contact.jpg");
+}
+
+#center{
+    text-align: center;
+}
+
+.content{
+    width:50%;
+    margin:auto;
+    text-align: center;
+    background-color: rgba(10, 10, 10, 0.9);
+    border: 3px solid white;
+    text-shadow:  0px 0px 1px black, 0px 0px 2px black, 0px 0px 3px black;
+}
+
+.content p{
+    text-align: left;
+    padding: 0% 10% 2% 10%;
+    margin:0;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 15px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+background: #222;
+}
+  
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: #eee;
+border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: #888;
+}
+
+@media only screen and (max-width: 600px) {
+    #engineering{
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5rem;
+        text-align: center;
+        padding-left:3%;
+    }
+    
+    .content{
+        width:90%;
+    }
+
+    .content p{
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+        padding: 0% 5% 10% 5%;
+    }
+}
